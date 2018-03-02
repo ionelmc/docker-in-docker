@@ -1,2 +1,3 @@
 # docker-in-docker
-An actually usable DIND
+
+Make sure you have a `-v /var/run/docker.sock:/var/run/docker.sock`.
