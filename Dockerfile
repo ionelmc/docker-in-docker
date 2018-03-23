@@ -22,7 +22,7 @@ RUN apt-get update \
 RUN locale-gen en_US.UTF-8
 
 ENV TERM=xterm
-ARG PYTHON_PIP_VERSION=9.0.1
+ARG PYTHON_PIP_VERSION=9.0.3
 RUN bash -o pipefail -c "curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python3 - --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION"
 
 ARG DOCKER_COMPOSE_VERSION=1.19.0
