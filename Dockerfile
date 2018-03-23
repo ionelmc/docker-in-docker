@@ -16,6 +16,7 @@ RUN apt-get update \
                     python3-dbg libpython3-dbg \
                     nano vim tree less \
                     socat telnet \
+                    openssh-client \
                     graphviz \
  && rm -rf /var/lib/apt/lists/*
 RUN locale-gen en_US.UTF-8
